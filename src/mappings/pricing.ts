@@ -38,7 +38,7 @@ export function getEthPriceInUSD(): BigDecimal {
   }
 }
 
-// token where amounts should contribute to tracked volume and liquidity
+// harmony tokens where amounts should contribute to tracked volume and liquidity
 let WHITELIST: string[] = [
   '0xcf664087a5bb0237a0bad6742852ec6c8d69a27a', // WONE
   '0xef977d2f931c1978db5f6747666fa1eacb0d0339', // DAI
@@ -46,17 +46,13 @@ let WHITELIST: string[] = [
   '0xf4E99513b2d31AE0b9080ff18D480EA9ED03084A', // xElephant
   '0xC30a7F9c216B945Ff8ACFB389e955A637eB0f478', // Elephant
   '0x6983d1e6def3690c4d616b13597a09e6193ea013', // ETH
-  // todo
-  '0x39aa39c021dfbae8fac545936693ac917d5e7563', // cUSDC
-  '0x86fadb80d8d2cff3c3680819e4da99c10232ba0f', // EBASE
-  '0x57ab1ec28d129707052df4df418d58a2d46d5f51', // sUSD
-  '0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2', // MKR
-  '0xc00e94cb662c3520282e6f5717214004a7f26888', // COMP
-  '0x514910771af9ca656af840dff83e8264ecf986ca', //LINK
-  '0x960b236a07cf122663c4303350609a66a7b288c0', //ANT
-  '0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f', //SNX
-  '0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e', //YFI
-  '0xdf5e0e81dff6faf3a7e52ba697820c5e32d806a8' // yCurv
+  '0xBEC775Cb42AbFa4288dE81F387a9b1A3c4Bc552A',  // SUSHI
+  '0x218532a12a389a4a92fc0c5fb22901d1c19198aa', // LINK
+  '0x301259f392b551ca8c592c9f676fcd2f9a0a84c5', // Matic
+  '0x582617bD8Ca80d22D4432E63Fda52D74dcDCEe4c', // bscADA
+  '0x224e64ec1bdce3870a6a6c777edd450454068fec', // UST
+  '0x3095c7557bcb296ccc6e363de01b760ba031f2d9', // WBTC
+
 ]
 
 // minimum liquidity required to count towards tracked volume for pairs with small # of Lps
