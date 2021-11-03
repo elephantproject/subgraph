@@ -55,3 +55,13 @@ This query fetches aggredated data from all uniswap pairs and tokens, to give a 
   }
 }
 ```
+
+
+ELEPHANT INSTRUCTIONS
+
+change package.json deploy numbers to subsequent
+
+yarn codegen
+yarn build
+yarn create-local
+yarn deploy-local
