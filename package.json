@@ -6,8 +6,8 @@
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
     "build": "graph build",
-    "create": "graph create --node https://graph.t.hmny.io:8020 elephantproject/subgraph20",
-    "deploy": "graph deploy  --node https://graph.t.hmny.io:8020 --ipfs http://graph.t.hmny.io:5001 elephantproject/subgraph20",
+    "create": "graph create --node https://graph.t.hmny.io:8020 elephantproject/subgraph21",
+    "deploy": "graph deploy  --node https://graph.t.hmny.io:8020 --ipfs http://graph.t.hmny.io:5001 elephantproject/subgraph21",
     "create-local": "graph create --node http://localhost:8020 elephantproject/subgraph20",
     "deploy-local": "graph deploy  --node http://localhost:8020 --ipfs http://localhost:5001 elephantproject/subgraph20",
     "deploy2": "graph deploy elephantproject/subgraph15 --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug",
