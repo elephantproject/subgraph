@@ -22,14 +22,15 @@
     "@typescript-eslint/parser": "^2.0.0",
     "eslint": "^6.2.2",
     "eslint-config-prettier": "^6.1.0",
-    "ethereum-address": "^0.0.4",
     "prettier": "^1.18.2",
     "typescript": "^3.5.2"
   },
-  "dependencies": {
-    "crypto-address-validator-ts": "^0.5.12",
-    "elephantdexdefault-token-list": "^7.0.0",
-    "ethereum-address": "^0.0.4"
+  "overrides":{
+    "@graphprotocol/graph-cli":{
+      "ipfs-http-client":{
+        "concat-stream": "^2.0.0"
+      }
+    }
   },
   "main": "subgraph.yaml",
   "author": "elephantproject <elephantproject@protonmail.com>",
