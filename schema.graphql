@@ -20,8 +20,6 @@ type UniswapFactory @entity {
   txCount: BigInt!
 }
 
-
-
 type Token @entity {
   # token address
   id: ID!
@@ -133,9 +131,9 @@ type Transaction @entity {
   timestamp: BigInt!
   # This is not the reverse of Mint.transaction; it is only used to
   # track incomplete mints (similar for burns and swaps)
-  mints: [Mint]!
-  burns: [Burn]!
-  swaps: [Swap]!
+  mints: [Mint!]!
+  burns: [Burn!]!
+  swaps: [Swap!]!
 }
 
 type Mint @entity {
@@ -245,6 +243,8 @@ type PairHourData @entity {
   # derived liquidity
   reserveUSD: BigDecimal!
 
+  totalSupply: BigDecimal
+
   # volume stats
   hourlyVolumeToken0: BigDecimal!
   hourlyVolumeToken1: BigDecimal!
@@ -296,5 +296,3 @@ type TokenDayData @entity {
   # price stats
   priceUSD: BigDecimal!
 }
-
-
